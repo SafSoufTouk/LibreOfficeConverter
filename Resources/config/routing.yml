@@ -1,0 +1,3 @@
+px_core_word_to_pdf_homepage:
+    path:     /
+    defaults: { _controller: pxCoreWordToPdfBundle:Default:index }
