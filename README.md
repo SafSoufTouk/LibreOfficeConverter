@@ -52,7 +52,7 @@ parameters:
     # ...
     libreoffice: /usr/bin/libreoffice	# Default value
 ```
-On Unix or Linux variants the LibreOffice executable will usually be found in /usr/lib/libreoffice/program/soffice 
+On Unix or Linux variants the LibreOffice executable will usually be found in /usr/lib/libreoffice/program/soffice <br /> 
 (link: /usr/bin/libreoffice)
 
 Usage
@@ -80,9 +80,9 @@ LibreOffice works with the following file extensions
 ### LibreOffice default file extension associations
 
 ##### The most common file formats used with the specific file extensions
-.ott file extension is used for OpenOffice.org text document template
-.sdc file extension is used for OpenOffice.org spreadsheet file
-.sdd file extension is used for OpenOffice.org Impress presentation file
+.ott file extension is used for OpenOffice.org text document template<br />
+.sdc file extension is used for OpenOffice.org spreadsheet file<br />
+.sdd file extension is used for OpenOffice.org Impress presentation file<br />
 
 ##### Other file extensions or file formats developed for use with LibreOffice
 .doc# .fods .fodt .odb .odi.oos .oot .otf .otg .oth .oti .otp .ots .oxt .sdp .sds .sdv .sfs .smf .sms .std .stw .sxg .sxm .vor
