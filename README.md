@@ -39,7 +39,7 @@ public function registerBundles()
 }
 ```
 
-### if libreoffice is not installed yet use this command
+### If libreoffice is not installed yet use this command
 
 ```
 $ sudo apt-get install libreoffice
@@ -52,7 +52,8 @@ parameters:
     # ...
     libreoffice: /usr/bin/libreoffice	# Default value
 ```
-On Unix or Linux variants the LibreOffice executable will usually be found in /usr/lib/libreoffice/program/soffice (link: /usr/bin/libreoffice)
+On Unix or Linux variants the LibreOffice executable will usually be found in /usr/lib/libreoffice/program/soffice 
+(link: /usr/bin/libreoffice)
 
 Usage
 -----
