@@ -16,18 +16,6 @@ Requirements
 Installation
 ------------
 
-### Add the bundle to composer.json:
-
-```
-// composer.json
-{    
-    "require":{
-        ... ,
-        "pxcore/wordtopdf": "dev-master"
-    }
-}
-```
-
 ### Download the bundle using composer
 
 ```
