@@ -16,7 +16,7 @@ Requirements
 Installation
 ------------
 
- 1. Add the bundle to composer.json:
+### Add the bundle to composer.json:
 
 ```
 // composer.json
@@ -28,14 +28,14 @@ Installation
 }
 ```
 
- 2. Download the bundle using composer
+### Download the bundle using composer
 
 ```
 $ composer require pxcore/wordtopdf "dev-master"
 ```
 Composer will install the bundle to your project's vendor/pxcore/wordtopdf directory.
 
- 3. Enable the bundle in the kernel:
+### Enable the bundle in the kernel:
 
 ```
 <?php
@@ -51,13 +51,13 @@ public function registerBundles()
 }
 ```
 
- 4. if libreoffice is not installed yet use this command
+### if libreoffice is not installed yet use this command
 
 ```
 $ sudo apt-get install libreoffice
 ```
 
- 5. Configure the libreoffice parameter (path to your libreoffice lib)
+### Configure the libreoffice parameter (path to your libreoffice lib)
 
 ```
 parameters:
