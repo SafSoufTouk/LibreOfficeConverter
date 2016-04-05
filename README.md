@@ -23,7 +23,7 @@ Installation
 {    
     "require":{
         ... ,
-        "pxcore/wordtopdf": "dev-master"
+        "pxcore/libreofficeconverter": "dev-master"
     }
 }
 ```
@@ -45,7 +45,7 @@ public function registerBundles()
 {
     $bundles = array(
         // ...
-        new pxCore\LibreOfficeConverterBundle\pxCoreWordToPdfBundle(),
+        new pxCore\LibreOfficeConverterBundle\pxCoreLibreOfficeConverterBundle(),
         // ...
     );
 }
@@ -72,7 +72,7 @@ Usage
 Exemple1: Convert WORD to PDF:
 
 ```
-// Create a new instance of pxCore_wordToPdf_service 
+// Create a new instance of pxCore_libreOffice_converter_service 
 $wordToPdfService = $this->get('pxCore_libreOffice_converter_service');
 
 $webDir = __DIR__ . '/../../../../web';
