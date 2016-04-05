@@ -1,5 +1,5 @@
 {
-    "name": "pxCore/LibreOfficeConverter",
+    "name": "px-core/libre-office-converter",
     "description": "Converts files from one format, such as '.docx' or '.xlsx' to another, such as '.pdf' or '.csv'",
     "keywords": ["convert", "word", "pdf", "csv", "libreoffice"],
     "license": "MIT",
