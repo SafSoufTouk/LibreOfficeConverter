@@ -16,22 +16,10 @@ Requirements
 Installation
 ------------
 
-### Add the bundle to composer.json:
-
-```
-// composer.json
-{    
-    "require":{
-        ... ,
-        "pxcore/libreofficeconverter": "dev-master"
-    }
-}
-```
-
 ### Download the bundle using composer
 
 ```
-$ composer require pxcore/libreofficeconverter "dev-master"
+$ composer require px-core/libre-office-converter "dev-master"
 ```
 Composer will install the bundle to your project's vendor/pxcore/libreofficeconverter directory.
 
@@ -45,7 +33,7 @@ public function registerBundles()
 {
     $bundles = array(
         // ...
-        new pxCore\LibreOfficeConverterBundle\pxCoreLibreOfficeConverterBundle(),
+        new pxCore\LibreOfficeConverterBundle\pxCoreLibreOfficeConverterBundle()
         // ...
     );
 }
@@ -84,5 +72,24 @@ $toFormat = 'pdf';
 // Generate the PDF file
 $wordToPdfService->generatePdf($wordPath, $outDir, $toFormat);
 ```
+
+LibreOffice works with the following file extensions
+-----
+
+### LibreOffice default file extension associations
+
+##### The most common file formats used with the specific file extensions
+.ott file extension is used for OpenOffice.org text document template
+.sdc file extension is used for OpenOffice.org spreadsheet file
+.sdd file extension is used for OpenOffice.org Impress presentation file
+
+##### Other file extensions or file formats developed for use with LibreOffice
+.doc# .fods .fodt .odb .odi.oos .oot .otf .otg .oth .oti .otp .ots .oxt .sdp .sds .sdv .sfs .smf .sms .std .stw .sxg .sxm .vor
+
+### Common file extensions used by LibreOffice
+.doc .odf .odg .ods .odt .ott .pdf .pub .rtf .sda .sdc .sdd .sdw .sxc .sxw
+
+### Other file extensions associated with LibreOffice
+.bau .dump .fodg .fodp .odm .odp .otc .psw .sdb .sgl .smd .stc .sti .svm .sxd .uot
 
 Enjoy!
