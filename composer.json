@@ -1,5 +1,5 @@
 {
-    "name": "pxcore/wordtopdf",
+    "name": "pxCore/WordToPdf",
     "description": "Converting word file to pdf",
     "keywords": ["word", "convert", "pdf", "wordtopdf"],
     "license": "MIT",
@@ -14,7 +14,7 @@
     },
     "autoload": {
         "psr-0": {
-            "WordToPdf": "src"
+            "pxCoreWordToPdfBundle": "src"
         }
     }
 }
