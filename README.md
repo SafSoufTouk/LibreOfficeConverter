@@ -85,7 +85,7 @@ LibreOffice works with the following file extensions
 .sdd file extension is used for OpenOffice.org Impress presentation file<br />
 
 ##### Other file extensions or file formats developed for use with LibreOffice
-.doc# .fods .fodt .odb .odi.oos .oot .otf .otg .oth .oti .otp .ots .oxt .sdp .sds .sdv .sfs .smf .sms .std .stw .sxg .sxm .vor
+.doc# .fods .fodt .odb .odi .oos .oot .otf .otg .oth .oti .otp .ots .oxt .sdp .sds .sdv .sfs .smf .sms .std .stw .sxg .sxm .vor
 
 ### Common file extensions used by LibreOffice
 .doc .odf .odg .ods .odt .ott .pdf .pub .rtf .sda .sdc .sdd .sdw .sxc .sxw
