@@ -39,7 +39,7 @@ public function registerBundles()
 }
 ```
 
-### if libreoffice is not installed yet use this command
+### If libreoffice is not installed yet use this command
 
 ```
 $ sudo apt-get install libreoffice
