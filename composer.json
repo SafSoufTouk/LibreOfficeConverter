@@ -1,6 +1,6 @@
 {
     "name": "pxcore/wordtopdf",
-    "description": "Converting Word file to pdf",
+    "description": "Converting word file to pdf",
     "keywords": ["word", "convert", "pdf", "wordtopdf"],
     "license": "MIT",
     "authors": [
