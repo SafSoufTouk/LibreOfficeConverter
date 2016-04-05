@@ -1,6 +1,7 @@
 # pxCore/LibreOfficeConverter
 
-Symfony bundle to converts files from one format, such as '.docx' or '.xlsx' to another, such as '.pdf' or '.csv'.
+Symfony bundle to converts files from one format, such as '.docx' or '.xlsx' to another, such as '.pdf' or '.csv'. <br />
+Accepted formats: .docx .doc .xlsx .xls .ppt .pdf .csv .odt .odp .ods and much more
 
 Authors
 -------
@@ -74,23 +75,20 @@ $toFormat = 'pdf';
 $wordToPdfService->generatePdf($wordPath, $outDir, $toFormat);
 ```
 
-LibreOffice works with the following file extensions
------
+Exemple2: Convert XLSX to CSV:
 
-### LibreOffice default file extension associations
+```
+// Create a new instance of pxCore_libreOffice_converter_service 
+$pxCoreLibreOfficeConverter = $this->get('pxCore_libreOffice_converter_service');
 
-##### The most common file formats used with the specific file extensions
-.ott file extension is used for OpenOffice.org text document template<br />
-.sdc file extension is used for OpenOffice.org spreadsheet file<br />
-.sdd file extension is used for OpenOffice.org Impress presentation file<br />
-
-##### Other file extensions or file formats developed for use with LibreOffice
-.doc# .fods .fodt .odb .odi .oos .oot .otf .otg .oth .oti .otp .ots .oxt .sdp .sds .sdv .sfs .smf .sms .std .stw .sxg .sxm .vor
-
-### Common file extensions used by LibreOffice
-.doc .odf .odg .ods .odt .ott .pdf .pub .rtf .sda .sdc .sdd .sdw .sxc .sxw
-
-### Other file extensions associated with LibreOffice
-.bau .dump .fodg .fodp .odm .odp .otc .psw .sdb .sgl .smd .stc .sti .svm .sxd .uot
+$webDir = __DIR__ . '/../../../../web';
+// The xlsx file path
+$xlsxPath = $webDir . '/xlsx/test2.xlsx';
+// The outDir in wich we will put the generated csv file
+$outdir = $webDir . '/csv';
+$toFormat = 'csv';
+// Generate the csv file
+$pxCoreLibreOfficeConverter->convert($xlsxPath, $outdir, $toFormat);
+```
 
 Enjoy!
