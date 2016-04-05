@@ -1,6 +1,6 @@
-# WordToPdf
+# pxCore/LibreOfficeConverter
 
-Symfony bundle to convert a word file to pdf.
+Symfony bundle to converts files from one format, such as '.docx' or '.xlsx' to another, such as '.pdf' or '.csv'.
 
 Authors
 -------
@@ -16,12 +16,24 @@ Requirements
 Installation
 ------------
 
+### Add the bundle to composer.json:
+
+```
+// composer.json
+{    
+    "require":{
+        ... ,
+        "pxcore/wordtopdf": "dev-master"
+    }
+}
+```
+
 ### Download the bundle using composer
 
 ```
-$ composer require pxcore/wordtopdf "dev-master"
+$ composer require pxcore/libreofficeconverter "dev-master"
 ```
-Composer will install the bundle to your project's vendor/pxcore/wordtopdf directory.
+Composer will install the bundle to your project's vendor/pxcore/libreofficeconverter directory.
 
 ### Enable the bundle in the kernel:
 
@@ -33,13 +45,13 @@ public function registerBundles()
 {
     $bundles = array(
         // ...
-        new pxCore\WordToPdfBundle\pxCoreWordToPdfBundle(),
+        new pxCore\LibreOfficeConverterBundle\pxCoreWordToPdfBundle(),
         // ...
     );
 }
 ```
 
-### If libreoffice is not installed yet use this command
+### if libreoffice is not installed yet use this command
 
 ```
 $ sudo apt-get install libreoffice
@@ -52,23 +64,25 @@ parameters:
     # ...
     libreoffice: /usr/bin/libreoffice	# Default value
 ```
+On Unix or Linux variants the LibreOffice executable will usually be found in /usr/lib/libreoffice/program/soffice (link: /usr/bin/libreoffice)
 
 Usage
 -----
 
-Convert WORD to PDF:
+Exemple1: Convert WORD to PDF:
 
 ```
 // Create a new instance of pxCore_wordToPdf_service 
-$wordToPdfService = $this->get('pxCore_wordToPdf_service');
+$wordToPdfService = $this->get('pxCore_libreOffice_converter_service');
 
 $webDir = __DIR__ . '/../../../../web';
 // The word file path
 $wordPath = $webDir . '/word/test.docx';
 // The outDir in wich we will put the generated PDF
-$outdir = $webDir . '/pdf';
+$outDir = $webDir . '/pdf';
+$toFormat = 'pdf';
 // Generate the PDF file
-$wordToPdfService->generatePdf($wordPath, $outdir);
+$wordToPdfService->generatePdf($wordPath, $outDir, $toFormat);
 ```
 
 Enjoy!

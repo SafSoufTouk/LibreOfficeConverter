@@ -1,6 +1,6 @@
 <?php
 
-namespace pxCore\WordToPdfBundle\Tests\Controller;
+namespace pxCore\LibreOfficeConverterBundle\Tests\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 

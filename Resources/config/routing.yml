@@ -1,3 +1,3 @@
-px_core_word_to_pdf_homepage:
+px_core_libre_office_converter_homepage:
     path:     /
-    defaults: { _controller: pxCoreWordToPdfBundle:Default:index }
+    defaults: { _controller: pxCoreLibreOfficeConverterBundle:Default:index }

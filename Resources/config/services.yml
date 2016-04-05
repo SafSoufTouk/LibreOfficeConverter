@@ -1,7 +1,7 @@
 parameters:
-    pxCore.wordToPdf.service.class: pxCore\WordToPdfBundle\Services\WordToPdfService
+    pxCore.libreOffice.converter.service.class: pxCore\LibreOfficeConverterBundle\Services\LibreOfficeConverterService
     libreoffice: /usr/bin/libreoffice
 services:
-    pxCore_wordToPdf_service:
-        class: %pxCore.wordToPdf.service.class%
+    pxCore_libreOffice_converter_service:
+        class: %pxCore.libreOffice.converter.service.class%
         arguments: ['@service_container']
