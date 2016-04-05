@@ -22,7 +22,7 @@ Installation
 ```
 $ composer require px-core/libre-office-converter "dev-master"
 ```
-Composer will install the bundle to your project's vendor/pxcore/libreofficeconverter directory.
+Composer will install the bundle to your project's vendor/px-core/libre-office-converter directory.
 
 ### Enable the bundle in the kernel:
 
