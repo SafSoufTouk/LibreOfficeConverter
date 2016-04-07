@@ -72,7 +72,7 @@ $wordPath = $webDir . '/word/test.docx';
 $outDir = $webDir . '/pdf';
 $toFormat = 'pdf';
 // Generate the PDF file
-$wordToPdfService->generatePdf($wordPath, $outDir, $toFormat);
+$wordToPdfService->convert($wordPath, $outDir, $toFormat);
 ```
 
 Exemple2: Convert XLSX to CSV:
